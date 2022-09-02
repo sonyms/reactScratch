@@ -14,3 +14,8 @@ npm i --save-dev eslint eslint-config-airbnb-base eslint-plugin-jest eslint-conf
 
 npm i react react-dom
 
+
+Style and Less Loaders
+------------------------------------------------------------
+
+npm i --save-dev less less-loade style-loader css-loader
