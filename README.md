@@ -19,3 +19,9 @@ Style and Less Loaders
 ------------------------------------------------------------
 
 npm i --save-dev less less-loade style-loader css-loader
+
+
+Less Watch Compiler
+-----------------------------------------------------------
+
+npm install less less-watch-compiler concurrently --save-dev
