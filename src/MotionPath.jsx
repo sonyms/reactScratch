@@ -1,6 +1,7 @@
 import * as React from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import "./motionPath.css";
+import "./test.css";
 
 const MotionPath = () => {
   const x = useMotionValue(0);
@@ -20,6 +21,23 @@ const MotionPath = () => {
   const crossPathB = useTransform(x, [-50, -100], [0, 1]);
 
   return (
+    <> 
+    <div className="App">
+    <header className="App-header">
+     
+      <p>
+        Edit <code>src/App.js</code> and save to reload.
+      </p>
+      <a
+        className="App-link"
+        href="https://reactjs.org"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Learn React
+      </a>
+    </header>
+  </div>
     <motion.div className="example-container" style={{ background }}>
       <motion.div
         className="box"
@@ -62,6 +80,7 @@ const MotionPath = () => {
         </svg>
       </motion.div>
     </motion.div>
+    </>
   );
 };
 

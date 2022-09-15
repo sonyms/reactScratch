@@ -58,7 +58,11 @@ module.exports={
          * resolve the one with the extension listed first in the array and skip the rest. 
          * This is what enables users to leave off the extension when importing
          */
-        extensions: ['.js','.jsx','.json'] 
+        extensions: ['.js','.jsx','.json'], 
+
+        alias: {
+            '@': path.resolve(__dirname, 'src/'),
+        }
     },
     module:{
         /** "rules"
@@ -76,7 +80,15 @@ module.exports={
             {
                 test: /\.css$/i,
                 use: ["style-loader", "css-loader"],
-              }
+            },
+            {
+                test: /\.less$/,
+                use: [
+                    { loader: 'style-loader' },
+                    { loader: 'css-loader' },
+                    { loader: 'less-loader' }
+                ]
+            }
         ]
     }
 }
