@@ -1,7 +1,8 @@
 {
     "watchFolder": "src/",
-    "outputFolder": "src/",
-    "sourceMap": true,
+    "outputFolder": "public/",
+    "sourceMap": false,
     "runOnce": false,
-    "enableJs": true
+    "enableJs": true,
+    "minified":true
   }
