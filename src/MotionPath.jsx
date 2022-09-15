@@ -1,7 +1,7 @@
 import * as React from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import "./motionPath.css";
-import "./test.css";
+
 
 const MotionPath = () => {
   const x = useMotionValue(0);
@@ -26,7 +26,7 @@ const MotionPath = () => {
     <header className="App-header">
      
       <p>
-        Edit <code>src/App.js</code> and save to reload.
+        Edit <code>src/App.js</code> and save to reload. sdfsdfsdfsdf
       </p>
       <a
         className="App-link"
@@ -80,6 +80,7 @@ const MotionPath = () => {
         </svg>
       </motion.div>
     </motion.div>
+
     </>
   );
 };

@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 // bb900aa9
 const App = () => {
 
-
     const movie = {
         "Title": "Batman Begins",
         "Year": "2005",
